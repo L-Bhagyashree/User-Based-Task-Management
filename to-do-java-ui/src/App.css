@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.msg{
+    color:red;
+}
+
+.App{
+    width: 100vw;
+    height: 100vh;
+}
+
+.LandingPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    >div{
+        height: 50vh;
+        width: 80vw;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        >.pgs{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding-top: 1vh;
+            >div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                padding-top: 1vh;
+                >div{
+                    padding-top: 2vh;
+                    >button{
+                        width:12vw;
+                        height: 4vh;
+                        border: none;
+                        background-color: white;
+                        text-align: center;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                        transition: box-shadow 0.3s ease-in-out;
+                        &:hover{
+                            cursor: pointer;
+                            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+                        }
+                    }
+                    >div{
+                        width: 50vw;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        >span{
+                            text-align: center;
+                            width: 40vw;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            font-size: 2.8vh;
+                            height: 5vh;
+                            >input{
+                                height: 4vh;
+                                text-align: center;
+                                width: 20vw;
+                                border-radius: 1vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        >div{
+            width:30vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            >.btncls{
+                width:30vw;
+                height: 6vh;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                >button{
+                    width:12vw;
+                    height: 4vh;
+                    border: none;
+                    background-color: white;
+                    text-align: center;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                    transition: box-shadow 0.3s ease-in-out;
+                    &:hover{
+                        cursor: pointer;
+                        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.registration{
+    >div{
+        width: 50vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        >div{
+            >span{
+                text-align: center;
+                width: 45vw;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                font-size: 2.8vh;
+                height: 5vh;
+                >input{
+                    height: 4vh;
+                    text-align: center;
+                    width: 20vw;
+                    border-radius: 1vw;
+                }
+            }
+        }
+    }
+}
+
+.HomePage{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+        >nav{
+            border-top: 3px solid black;
+            border-bottom: 3px solid black;
+            height: 4vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            >div{
+                display: flex;
+                width: 50vw;
+                >div{
+                    width:30%;
+                    border-right: 3px solid black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 4vh;
+                    >a{
+                        text-decoration: none;
+                    }
+                }
+                >span{
+                    width: 46vw;
+                    text-align: right;
+                }
+            }
+        }
+    >div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        >.Homelandingpage{
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            >span{
+                width: 30vw;
+                height: 5vh;
+                border: 3px solid black;
+                border-radius: 0.7vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5vw;
+            }
+        }
+        >h1{
+            font-size: 6vw;
+            margin-left: 3.5vw;
+        }
+        >span{
+            font-size: 3vw;
+        }
+    }
+}
+
+.Addtask{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    >div{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1.5vh;
+        >span{
+            width:40%;
+            text-align: left;
+        }
+    }
+}
+
+.Tasklist{
+    margin-top: 2vh;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    >table{
+        border: 2px solid black;
+        width: 70vw;
+        >thead{
+            >tr{
+                >th{
+                    border: 2px solid black;
+                    text-align: center;
+                }
+            }
+        }
+        >tbody{
+            overflow-y: scroll;
+            >tr{
+                >td{
+                    border: 2px solid black;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+#myDialog{
+    position: relative;
+    left: 35vw;
+    top: 40vh;
+    height: 25vh;
+    width: 30vw;
+    border-radius: 1vw;
+    >.Edittasks{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 17vh;
+        >div{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            >span{
+                width:40%;
+                text-align: left;
+            }
+        }
+    }
+}
+
